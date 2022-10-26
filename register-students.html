@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despesas República</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="col-md-6 offset-md-3 mt-5">
+            <div class="card m-auto" style="max-width: 450px;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Cadastro de Estudante</span>
+                    <button class="btn btn-light"><i class="fa-solid fa-circle-question"></i></button>
+                </div>
+                <div class="card-body">
+                    <form method="GET" id="formRegisterStudent">
+    
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-icon1"><i class="fa-solid fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Nome" name="nome"
+                                aria-describedby="#basic-icon1" aria-labelledby="Nome">
+                        </div>
+        
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-icon2"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="email@example.com" name="email"
+                                aria-describedby="#basic-icon2" aria-labelledby="Email">
+                        </div>
+                        
+                        <label class="form-label">Renda Mensal</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-icon3"><i class="fa-solid fa-dollar-sign"></i></span>
+                            <input type="text" class="form-control" placeholder="0,00" name="email"
+                                aria-describedby="#basic-icon3" aria-labelledby="Email">
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <!-- JQuery Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Scripts -->
+    <script src="/app.js"></script>
+</body>
+
+</html>
