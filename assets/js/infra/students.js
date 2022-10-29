@@ -1,6 +1,6 @@
-import Storage from "/storage.js"
+import Storage from "./storage.js"
 
-const ServiceStudent = () => {
+export const ServiceStudent = () => {
 
     const storage = Storage()
 
@@ -16,11 +16,22 @@ const ServiceStudent = () => {
         return storage.removeAll('students')
     }
 
+    function csvText() {
+        const studentList = findAll()
+
+        let values = ''
+        
+        studentList.map(item => {
+            values += `${item.nome};${item.email};${item.renda}; \n`
+        })
+
+        return values
+    }
+
     return {
         findAll,
+        csvText,
         register,
         destroyAll,
     }
 }
-
-export default ServiceStudent
