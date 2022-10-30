@@ -1,5 +1,5 @@
-import { messageError, messageSuccess } from 'resources/js/utils/bootstrap.js'
-import { ServiceExpense } from 'resources/js/infra/expenses.js'
+import { messageError, messageSuccess } from '../../utils/bootstrap.js'
+import { ServiceExpense } from '../../infra/expenses.js'
 
 const serviceExpense = ServiceExpense()
 

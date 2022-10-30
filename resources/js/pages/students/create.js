@@ -1,5 +1,5 @@
-import { messageError, messageSuccess } from 'resources/js/utils/bootstrap.js'
-import { ServiceStudent } from 'resources/js/infra/students.js'
+import { messageError, messageSuccess } from '../../utils/bootstrap.js'
+import { ServiceStudent } from '../../infra/students.js'
 
 const serviceStudent = ServiceStudent()
 

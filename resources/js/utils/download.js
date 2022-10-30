@@ -1,5 +1,5 @@
-import { ServiceStudent } from 'resources/js/infra/students.js'
-import { ServiceExpense } from 'resources/js/infra/expenses.js'
+import { ServiceStudent } from '../infra/students.js'
+import { ServiceExpense } from '../infra/expenses.js'
 
 import SaveFile from '/resources/js/utils/saveFile.js'
 
