@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despesas República</title>
+    <title>Cadastro de Despesas</title>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -40,7 +40,8 @@
                                     href="/pages/students/create.html"><span>Cadastrar</span> <i
                                         class="fa-solid fa-plus"></i></a></li>
                             <li><button class="dropdown-item d-flex justify-content-between align-items-center"
-                                    id="downloadStudentList" type="button"><span>Download</span> <i class="fa-solid fa-download"></i></button>
+                                    id="downloadStudentList" type="button"><span>Download</span> <i
+                                        class="fa-solid fa-download"></i></button>
                             </li>
                         </ul>
                     </li>
@@ -52,7 +53,7 @@
                                     href="/pages/expenses/create.html"><span>Cadastrar</span> <i
                                         class="fa-solid fa-plus"></i></a></li>
                             <li><button class="dropdown-item d-flex justify-content-between align-items-center"
-                                id="downloadExpensesList" type="button"><span>Download</span> <i
+                                    id="downloadExpensesList" type="button"><span>Download</span> <i
                                         class="fa-solid fa-download"></i></button>
                             </li>
                         </ul>
@@ -62,6 +63,56 @@
         </div>
     </nav>
     <!-- Navbar end -->
+
+    <!-- Content page -->
+    <section>
+        <div class="col-md-6 offset-md-3 mt-5">
+
+            <div class="card m-auto" style="max-width: 450px;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span>Cadastrar despesa</span>
+                    <button class="btn btn-sm btn-light border" data-bs-toggle="popover" data-bs-title="Informações"
+                        data-bs-content="Deverão ser informados os dados da despesa: <b>Descrição</b>, <b>Categoria</b> e <b>Valor</b>"><i
+                            class="fa-solid fa-circle-question"></i></button>
+                </div>
+                <div class="card-body">
+                    <form method="GET" id="formRegisterExpense">
+
+                        <div class="mb-3">
+                            <label for="fieldDescricao" class="form-label">Descrição</label>
+                            <input type="text" id="fieldDescricao" class="form-control"
+                                placeholder="CAESB, CEB, Net, etc." name="descricao"
+                                aria-describedby="Descrição da Despesa" aria-labelledby="descrição">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fieldCategoria" class="form-label">Categoria</label>
+                            <input type="text" id="fieldCategoria" class="form-control"
+                                placeholder="Água, Luz, Telefone, etc." name="categoria"
+                                aria-describedby="Categoria da Despesa" aria-labelledby="categoria">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fieldDespesa" class="form-label">Valor da despesa (R$)</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-icon1"><i
+                                        class="fa-solid fa-dollar-sign"></i></span></span>
+                                <input type="text" id="fieldDespesa" class="form-control" placeholder="00,0"
+                                    name="valor" aria-describedby="Valor da Despesa" aria-labelledby="valor">
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-primary" type="submit">Cadastrar <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content page end -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

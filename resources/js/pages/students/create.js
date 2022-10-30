@@ -1,6 +1,5 @@
-import { messageError, messageSuccess } from './bootstrap.js'
-import { ServiceStudent } from './infra/students.js'
-import { saveFile } from './utils/fileSave.js'
+import { messageError, messageSuccess } from '/resources/js/utils/bootstrap.js'
+import { ServiceStudent } from '/resources/js/infra/students.js'
 
 const serviceStudent = ServiceStudent()
 
@@ -36,7 +35,7 @@ async function createStudent() {
         })
 
         if (student) {
-            messageSuccess(`Aluno <b>${nome.value}</b> foi Cadastrado(a) com sucesso`)
+            messageSuccess(`Aluno(a) <b>${nome.value}</b> cadastrado(a) com sucesso`)
 
             nome.value = ''
             email.value = ''
@@ -48,18 +47,9 @@ async function createStudent() {
     }
 }
 
-function downloadStudentList() {
-    saveFile(serviceStudent.csvText(), 'alunos.txt')
-}
-
 $('#formRegisterStudent').submit(async (e) => {
     e.preventDefault()
     createStudent()
-})
-
-$('#downloadListStudentsButton').click(e => {
-    e.preventDefault()
-    downloadStudentList()
 })
 
 $(document).ready(function () {

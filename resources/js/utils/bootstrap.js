@@ -1,8 +1,9 @@
-
-new bootstrap.Popover('[data-bs-toggle="popover"]', {
-    trigger: 'hover',
-    html: true,
-})
+if($('[data-bs-toggle="popover"]')[0]) {
+    new bootstrap.Popover('[data-bs-toggle="popover"]', {
+        trigger: 'hover',
+        html: true,
+    })
+}
 
 export const messageSuccess = (message) => {
     iziToast.success({

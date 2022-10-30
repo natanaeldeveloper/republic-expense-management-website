@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despesas República</title>
+    <title>Cadastro de Estudantes</title>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -18,33 +18,42 @@
         integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Site Despesas</a>
+            <a class="navbar-brand" href="/index.html">Despesas República</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Estudantes </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item d-flex justify-content-between align-items-center"
+                                    href="/pages/students/create.html"><span>Cadastrar</span> <i
+                                        class="fa-solid fa-plus"></i></a></li>
+                            <li><button class="dropdown-item d-flex justify-content-between align-items-center"
+                                    id="downloadStudentList" type="button"><span>Download</span> <i class="fa-solid fa-download"></i></button>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Alunos </a>
+                            aria-expanded="false">Despesas </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item d-flex justify-content-between align-items-center"
-                                    href="/register-students.html"><span>Cadastrar</span> <i
+                                    href="/pages/expenses/create.html"><span>Cadastrar</span> <i
                                         class="fa-solid fa-plus"></i></a></li>
-                            <li><button id="downloadListStudentsButton"
-                                    class="dropdown-item d-flex justify-content-between align-items-center"
-                                    type="button"><span>Download</span> <i class="fa-solid fa-download"></i></button>
+                            <li><button class="dropdown-item d-flex justify-content-between align-items-center"
+                                id="downloadExpensesList" type="button"><span>Download</span> <i
+                                        class="fa-solid fa-download"></i></button>
                             </li>
                         </ul>
                     </li>
@@ -53,14 +62,14 @@
         </div>
     </nav>
     <!-- Navbar end -->
-
+    
     <!-- Content page -->
     <section>
         <div class="col-md-6 offset-md-3 mt-5">
 
             <div class="card m-auto" style="max-width: 450px;">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <span>Cadastro de Aluno</span>
+                    <span>Cadastrar estudante</span>
                     <button class="btn btn-sm btn-light border" data-bs-toggle="popover" data-bs-title="Informações"
                         data-bs-content="Deverão ser informados os dados do aluno: <b>Nome</b>, <b>Email</b> e <b>Renda Mensal</b>"><i
                             class="fa-solid fa-circle-question"></i></button>
@@ -89,7 +98,7 @@
                         </div>
 
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-sm btn-primary" name="submit">Cadastrar <i
+                            <button class="btn btn-sm btn-primary" type="submit">Cadastrar <i
                                     class="fa-solid fa-arrow-right"></i></button>
                         </div>
 
@@ -126,7 +135,8 @@
         integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Scripts -->
-    <script src="/assets/js/register-students.js" type="module"></script>
+    <script src="/resources/js/utils/download.js" type="module"></script>
+    <script src="/resources/js/pages/students/create.js" type="module"></script>
 </body>
 
 </html>
