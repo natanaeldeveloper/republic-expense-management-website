@@ -1,4 +1,4 @@
-import Storage from "/resources/js/utils/storage.js"
+import Storage from "resources/js/utils/storage.js"
 
 export const ServiceExpense = () => {
     const storage = Storage()
