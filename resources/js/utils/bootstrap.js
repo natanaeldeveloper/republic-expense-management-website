@@ -1,4 +1,4 @@
-if($('[data-bs-toggle="popover"]')[0]) {
+if ($('[data-bs-toggle="popover"]')[0]) {
     new bootstrap.Popover('[data-bs-toggle="popover"]', {
         trigger: 'hover',
         html: true,

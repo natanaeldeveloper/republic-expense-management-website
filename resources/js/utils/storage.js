@@ -9,7 +9,8 @@ const Storage = () => {
     }
 
     function get(key) {
-        return decode(localStorage.getItem(key))
+        const data = decode(localStorage.getItem(key))
+        return data ? data : null
     }
 
     function set(key, value) {
