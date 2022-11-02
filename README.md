@@ -16,7 +16,7 @@ Para executa-lo localmente basta seguir os seguintes comandos no terminal
 1. Navegue até a pasta onde se encontra seu projeto:
 
     ```JS
-    cd c:\Users\MyUser\site-despesas-republica\
+    cd <caminho_ate_a_pasta_do_projeto>
     ```
 
 2. Baixe as dependências do projeto via `npm`:
