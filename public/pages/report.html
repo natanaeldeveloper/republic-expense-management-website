@@ -73,25 +73,25 @@
 
     <section class="p-5" style="min-height: calc(100vh - 60px);">
         <h2>Relatório do Mês</h2>
-        <div class="mt-4 d-flex gap-5">
-            <div class="mb-3">
+        <div class="mt-4 d-flex gap-4 gap-md-5" style="flex-flow: row wrap;">
+            <div>
                 <h5>Estudantes:</h5>
                 <h4 class="text-primary" id="fieldStudents"></h4>
             </div>
-            <div class="mb-3">
+            <div>
                 <h5>Despesas:</h5>
                 <h4 class="text-primary" id="fieldExpenses"></h4>
             </div>
-            <div class="mb-3">
+            <div>
                 <h5>Total a pagar (R$):</h5>
                 <h4 class="text-primary" id="fieldTotal"></h4>
             </div>
-            <div class="mb-3">
+            <div>
                 <h5>Valor por pessoa (R$):</h5>
                 <h4 class="text-primary" id="fieldPortion"></h4>
             </div>
         </div>
-
+        <br>
         <div class="d-flex flex-column gap-2" style="width:max-content;">
             <button class="btn btn-sm btn-danger" id="clearStudentsHistory">Limpar registros de alunos</button>
             <button class="btn btn-sm btn-outline-danger" id="clearExpensesHistory">Limpar registros de despesas</button>
