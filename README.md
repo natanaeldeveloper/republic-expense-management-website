@@ -7,6 +7,8 @@ Fornecer uma ferramenta a universitários que desejam registrar e dividir os gas
 
 ## Demonstração
 
+[demo](https://natanaeldeveloper.github.io/republic-expense-management-website)
+
 ### Cadastro de estudantes
 ![Cadastro de Estudantes](/demo-01.gif)
 
