@@ -7,11 +7,14 @@ Fornecer uma ferramenta a universitários que desejam registrar e dividir os gas
 
 ## Demonstração
 
-### Cadastro de Estudantes
+### Cadastro de estudantes
 ![Cadastro de Estudantes](/demo-01.gif)
 
-### Cadastro de Despesas
+### Cadastro de despesas
 ![Cadastro de Despesas](/demo-02.gif)
+
+### Consultar relatório do mês
+![Relatório do Mês](/demo-03.gif)
 
 ### Tecnologias utilizadas
 - JavaScript
