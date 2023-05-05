@@ -1,4 +1,4 @@
-# SITE DESPESAS REPÚLICA
+# site de gerenciamento de despesas da república
 
 ### Tecnologias utilizadas
 - JavaScript
