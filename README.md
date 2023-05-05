@@ -1,5 +1,18 @@
 # site de gerenciamento de despesas da república
 
+
+## Objetivo
+
+Fornecer uma ferramenta a universitários que desejam registrar e dividir os gastos mensais em sua república. O sistema oferece ao usuário a possibilidade de consultar o total de despesas do mês e a despesa per capita. Além de permitir o usuário realizar o download em formato CSV dos registro de estudantes e despesas.
+
+## Demonstração
+
+### Cadastro de Estudantes
+![Cadastro de Estudantes](/demo-01.gif)
+
+### Cadastro de Despesas
+![Cadastro de Despesas](/demo-02.gif)
+
 ### Tecnologias utilizadas
 - JavaScript
 - HTML5
